@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #700611;
+}
+
+.video-effect {
+    width: 70vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+     display: flex;
+   align-items: center;
+   min-height: 100vh;
+   position: relative;
+}
+
+.video-effect::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to left, #700611 1%, rgba(255, 255, 255, 0) 100%);
+}
+
+.video-effect video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.video-effect-position{
+    position: relative;
+
+}
+
+.imprentaletter{
+position: absolute;
+    z-index: 1;
+    left: 35%;
+    color: white;
+    font-family: sans-serif;
+    line-height: 120px;
+    font-size: 150px;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+
+
+
+.stylecross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.sidebar{
+    position: relative;
+    z-index: 1;
+ background-color: #700611;
+width: 50vw;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+list-style-type: none
+
+}
+
+
+.sidebar a {
+    
+    font-size: 60px;
+    color: rgb(255, 255, 255); 
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.listadesordenada{
+    list-style-type: none;
+    padding: 0;
+    margin-right: 50%;
+}
+.elementosEnLista a:hover{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px; 
+}
+
+.elementosEnLista a:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+
+.superior{
+    display: flex;
+    
+}
+
+/* Estilos para pantallas más pequeñas  CELULAR*/
+@media only screen and (max-width: 767px) {
+    .imprentaletter{
+   display: none;
+     }
+     .superior{
+        display: flex;
+        flex-direction: column-reverse;
+
+     }
+     .listadesordenada{
+
+        margin-right: 0%;
+    }
+
+    .video-effect {
+        width: 70vw;
+        height: 10vh;
+        overflow: hidden;
+        z-index: 0;
+        display: flex;
+    align-items: center;
+    min-height: 30vh;
+    position: relative;
+    }
+    .sidebar{
+        position: relative;
+        z-index: 1;
+    width: 100%;
+    height: 70vh;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none
+    
+    }
+    .sidebar a {
+    
+        font-size: 60px;
+    font-weight: 100;
+    }
+    
+    .video-effect::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, #700611 1%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .sidebar{
+        position: relative;
+        z-index: 1;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none
+    
+    }
+    .video-effect {
+        width: 100%;
+        height: 20vh;
+        
+    }
+}
+
+/* Estilos para pantallas medianas  TABLET*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .listadesordenada{
+
+        margin-right: 0%;
+    }
+ 
+    .imprentaletter{
+        position: absolute;
+        z-index: 1;
+         color: white;
+         font-family: sans-serif;
+         text-align: center;
+         line-height: 120px;
+         font-size: 120px;
+         background-color: rgba(255, 0, 0, 0);
+     }
+     
+    
+    .video-effect {
+        width: 50%;
+        height: 70vh;
+    }
+}
