@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Nosotro ahora</title>
+    <link rel="stylesheet" href="/css/presupuesto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+
+
+        <div class="video">
+            <div class="video">
+                <div class="video-effect">
+                  <h1 class="presupuestoletter">PRESU<br>PUESTO</h1>
+                    <video src="/img/VIDEO_WER_background.mp4" autoplay  muted loop></video>
+                </div> 
+            </div>
+        </div>
+
+
+        <div class="header">
+            <nav class="navbar-container">
+                <div class="navbar-logo">
+                    <img src="/img/navbar.png" alt="">
+                </div>
+                <div class="navbar-menu">
+                    <a href="#"><img  src="/img/Menu1.png" alt="menu"></a>
+                </div>
+        </div> 
+
+
+    
+<div class="formulario">
+  <div class="linea-blanca-container">
+    <div class="linea-blanca"></div>
+    <div class="solicitud">
+      <h2 class="titulo-presupuesto">Solicitud de Presupuesto</h2>
+      <p class="parrafo-presupuesto">Complete el formulario para hacernos llegar la cotización del trabajo que <br> desea imprimir.En breve nos estaremos comunicando.</p>
+    </div>
+    <div>
+      <div class="form-inputs">
+
+        <div class="form-row">
+          <label for="nombre">Nombre*</label>
+          <input type="text" id="nombre"placeholder="Completar" name="nombre" required>
+        </div>
+      
+        <div class="form-row">
+          <label for="correo">Correo electrónico*</label>
+          <input type="email" id="correo" placeholder="Completar"name="correo" required>
+        </div>
+      
+        <div class="form-row">
+          <label for="telefono">Cel./Tel*</label>
+          <input type="text" id="telefono"placeholder="Completar" name="telefono" required>
+        </div>
+      
+        <div class="form-row">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" placeholder="Completar"name="empresa" required>
+        </div>
+      </div>
+      <div class="linea-blanca"></div>
+      <label for="producto" class="producto">Producto*</label>
+      <div class="form-inputs-productos">
+        <div class="select">
+          <select name="format" id="format">
+             <option disabled selected hidden class="option-no-select">Selecionar</option>
+             <option value="Tinta">Tinta</option>
+             <option value="Papeles">Papeles</option>
+             <option value="Tarjetas">Tarjetas</option>
+             <option value="Folletos">Folletos</option>
+             <option value="Agendas">Agendas</option>
+          </select>
+      </div>
+      </div>
+
+      <div class="form-inputs-otros">
+
+        <div class="form-row-otros">
+          <label for="nombre">Cantidad*</label>
+          <input type="text" placeholder="Completar" id="nombre" name="nombre" required>
+        </div>
+      
+        <div class="form-row-otros">
+          <label for="correo">Medidas*</label>
+          <input type="email" placeholder="Completar" id="correo" name="correo" required>
+        </div>
+      
+        <div class="form-row-otros">
+          <label for="telefono">Cel./Tel*</label>
+          <input type="text" placeholder="Completar"   id="telefono" name="telefono" required>
+        </div>
+      
+      </div>
+
+      <div class="form-inputs-papel">
+
+        <div class="form-row-papel">
+          <label for="nombre">Papel*</label>
+          <input type="text" placeholder="Completar" id="nombre" name="nombre" required>
+        </div>
+      
+        <div class="form-row-otros">
+          <label for="correo">Terminación*</label>
+          <input type="email" placeholder="Completar" id="terminacion" name="correo" required>
+        </div>
+      
+        <div class="form-row-otros">
+          <label for="telefono">Fecha de entrega*</label>
+          <input type="text"  placeholder="Completar"  id="telefono" name="telefono" required>
+        </div>
+      
+      </div>
+
+      <div class="form-inputs-descripcion">
+
+        <div class="form-row-descripcion">
+          <label for="nombre">Descripción/Aclaración/Comentarios*</label>
+          <input type="text" placeholder="Completar" id="nombre" name="nombre" required>
+        </div> 
+      </div>
+</div> 
+    </div>
+    
+  </div>
+</div>      
+
+
+<!-- <form action="procesar_formulario.php" method="POST">
+  <div class="form-row">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+  </div>
+
+  <div class="form-row">
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+  </div>
+
+  <div class="form-row">
+    <label for="telefono">Número de teléfono:</label>
+    <input type="text" id="telefono" name="telefono" required>
+  </div>
+
+  <div class="form-row">
+    <label for="empresa">Nombre de la empresa:</label>
+    <input type="text" id="empresa" name="empresa" required>
+  </div>
+
+  <div class="form-row">
+    <label for="producto">Producto:</label>
+    <input type="text" id="producto" name="producto" required>
+  </div>
+
+  <div class="form-row horizontal">
+    <label for="cantidad">Cantidad:</label>
+    <input type="text" id="cantidad" name="cantidad" required>
+
+    <label for="medidas">Medidas:</label>
+    <input type="text" id="medidas" name="medidas" required>
+
+    <label for="tintas">Tintas:</label>
+    <input type="text" id="tintas" name="tintas" required>
+  </div>
+
+  <div class="form-row">
+    <label for="papel">Tipo de papel:</label>
+    <input type="text" id="papel" name="papel" required>
+
+    <label for="terminacion">Terminación:</label>
+    <input type="text" id="terminacion" name="terminacion" required>
+  </div>
+
+  <div class="form-row">
+    <label for="fecha">Fecha de entrega:</label>
+    <input type="date" id="fecha" name="fecha" required>
+  </div>
+
+  <div class="form-row">
+    <label for="descripcion">Descripción/Aclaración:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea>
+  </div>
+
+  <div class="form-row">
+    <label for="archivo">Cargar archivo:</label>
+    <input type="file" id="archivo" name="archivo">
+  </div>
+
+  <div class="form-row horizontal">
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpiar</button>
+  </div>
+</form>
+</div> -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
